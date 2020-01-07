@@ -1,0 +1,1 @@
+./node_modules/.bin/concurrently "ng serve --aot" "./node_modules/.bin/json-server -p 4600 data.js"

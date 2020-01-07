@@ -1,0 +1,25 @@
+<header (submit)="handleSubmit()"></header>
+<div class='container-fluid'>
+  <div class='row'>
+    <div class='col-3 p-2'>
+      <type-list [selected]="selectedType" [types]="types" (selectType)="handleTypeSelect($event)"></type-list>
+      <button class='btn btn-light border-primary m-2' routerLink='/'>Summary</button>
+    </div>
+    <div class='col-9 p-2'>
+      <table class="table table-sm table-striped">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th class="text-right">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let p of people">
+            <td>{{ p.name.first }} {{ p.name.last}}</td>
+            <td class="text-right">${{ p.amount.split(",")[1]}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

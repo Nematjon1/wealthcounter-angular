@@ -1,0 +1,4 @@
+<button *ngFor="let typ of types" [class]="getBtnClass(typ)"
+  (click)="selectType.emit(typ)" routerLink="/navigator/:id">
+  {{ typ }}
+</button>

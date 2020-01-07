@@ -1,0 +1,46 @@
+<div class='container'>
+  <div class='row'>
+    <div class='col-12'>
+      <div class="card p-2 text-center">
+        <h4>Welcome</h4>
+        <p>With supporting text below as a natural lead-in to additional content</p>
+        <button routerLink='/navigator/0' class='btn col-3 m-auto btn-primary btn-sm'>See transactions</button>
+        <div class='p-2'>
+          <div>You have {{ peopleTotal }} transactions</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='row my-3'>
+    <div class='col-6'>
+      <div class='card bg-light p-2'>
+        <div class='text-bold d-1'>{{incomeTotal}}</div>
+        <p>Income</p>
+        <button class='offset-4 btn btn-primary btn-sm' routerLink='/navigator/2'>See All</button>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class='card bg-light p-2'>
+        <div class='text-bold d-1'>{{investmentsTotal}}</div>
+        <p>Investments</p>
+        <button class='offset-4 btn btn-primary btn-sm' routerLink='/navigator/3'>See All</button>
+      </div>
+    </div>
+  </div>
+  <div class='row my-3'>
+    <div class='col-6'>
+      <div class='card bg-light p-2'>
+        <div class='text-bold d-1'>{{outcomeTotal}}</div>
+        <p>Outcome</p>
+        <button class='offset-4 btn btn-primary btn-sm' routerLink='/navigator/0'>See All</button>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class='card bg-light p-2'>
+        <div class='text-bold d-1'>{{loansTotal}}</div>
+        <p>Loans</p>
+        <button class='offset-4 btn btn-primary btn-sm' routerLink='/navigator/1'>See All</button>
+      </div>
+    </div>
+  </div>
+</div>
